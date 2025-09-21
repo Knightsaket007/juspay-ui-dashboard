@@ -3,15 +3,19 @@ import Navbar from "./components/layout/Navbar";
 import LeftPanel from "./components/layout/LeftPanel";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import RightPanel from "./components/layout/RightPanel";
+import { useState } from "react";
 
 
 function App() {
+
+  const [isopen, setisopen] = useState(true)
+
   return (
     <Router>
         <div className="flex w-[100%]">
-          <LeftPanel />
-          <div className="bg-pink-500 w-[100%]">
-            <Navbar />
+          <LeftPanel isopen={isopen} setisopen={setisopen}/>
+          <div className=" w-[100%]">
+            <Navbar setisopen={setisopen}/>
             <Routes>
               <Route path="/" element={<Dashboard />} />
             </Routes>

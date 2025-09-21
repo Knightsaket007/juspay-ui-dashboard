@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
 :root{
-  --black-40:Black/40%;
+  --black-10:rgba(28, 28, 28, 0.1);
+  --black-20:rgba(28, 28, 28, 0.2);
+  --black-40:rgba(28, 28, 28, 0.4);
+  --black-50:rgba(28, 28, 28, 0.05);
+
+  --blue-prime:rgba(227, 245, 255, 1);
+  --blue-light:rgba(247, 249, 251, 1);
+  --purple-light:rgba(229, 236, 246, 1);
+
   --font-14:14px;
   --font-16:16px;
   --font-20:20px;
@@ -9,12 +17,18 @@
   
 }
 
+
+
+
 body{
   margin: 0;
   padding: 0;
   font-family: inter;
   font-family: 'Inter', sans-serif;
   /* font-size: 14px; */
+  background-color: 1px solid var(--black-10, rgba(28, 28, 28, 0.1));
+  font-weight: 400;
+  border-right: 1px solid var(--black-10, rgba(28, 28, 28, 0.1))
 }
 
 .left-pannel *{
