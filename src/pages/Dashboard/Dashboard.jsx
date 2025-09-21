@@ -30,7 +30,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className='w-1/2 h-[252px] rounded-lg bg-[var(--blue-light)]'>
+        <div className='lg:w-1/2 h-[252px] rounded-lg bg-[var(--blue-light)]'>
           <BarChart />
         </div>
       </div>

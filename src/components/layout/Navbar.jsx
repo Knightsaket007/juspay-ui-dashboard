@@ -8,7 +8,7 @@ import bell from '../../assets/icons/navbar/bell.svg'
 import undo from '../../assets/icons/navbar/undo.svg'
 const Navbar = ({setisopen}) => {
   return (
-    <div className='py-5 flex items-center px-3 lg:px-7 border-b border-[var(--black-10)] justify-between'>
+    <div className='lg:py-5 py-2 flex items-center px-3 lg:px-7 border-b border-[var(--black-10)] justify-between'>
       {/* =-= Left side -=-= */}
       <div className='flex lg:gap-6 items-center gap-2.5'>
         <div className='cursor-pointer w-3 lg:w-fit lg:static' onClick={()=>setisopen(true)}><img src={slide} alt="" /></div>
@@ -20,7 +20,7 @@ const Navbar = ({setisopen}) => {
 
 
       {/* =-= Right side -=-= */}
-      <div className='flex gap-4 items-center w-50'>
+      <div className='flex gap-4 items-center w-50 lg:ml-0 ml-4'>
         <div className="relative lg:w-42 w-35">
 
           <span className=" inset-y-0 left-0 flex absolute items-center pl-2">
