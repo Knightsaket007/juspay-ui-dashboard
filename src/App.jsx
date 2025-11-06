@@ -20,7 +20,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
             </Routes>
           </div>
-          <RightPanel />
+          {/* <RightPanel /> */}
         </div>
 
     </Router>
